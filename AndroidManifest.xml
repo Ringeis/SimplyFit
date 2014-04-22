@@ -25,12 +25,18 @@
         </activity>
         <activity
         	android:theme="@android:style/Theme.Holo"
-            android:name="com.example.firstapp.DisplayMessageActivity"
-            android:label="@string/title_activity_display_message"
+            android:name="com.example.firstapp.ProfileActivity"
+            android:label="@string/title_activity_profile"
             android:parentActivityName="com.example.firstapp.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.firstapp.WorkoutActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_workout"
+            android:windowSoftInputMode="adjustPan" >
         </activity>
     </application>
 

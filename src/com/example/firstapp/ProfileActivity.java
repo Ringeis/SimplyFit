@@ -1,29 +1,34 @@
 package com.example.firstapp;
 
-import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
-import android.app.ActionBar;
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
+import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.EditText;
+import android.widget.TextView;
+import android.support.v4.app.NavUtils;
+import android.annotation.TargetApi;
+import android.content.Intent;
+import android.os.Build;
 
+public class ProfileActivity extends Activity {
 
-public class MainActivity extends Activity {
-	public final static String EXTRA_MESSAGE = "com.example.firstapp.MESSAGE";
-	
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_profile);
 		//ActionBar actionBar = getActionBar();
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+	}
+
+	/**
+	 * Set up the {@link android.app.ActionBar}, if the API is available.
+	 */
+	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
+	private void setupActionBar() {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+			getActionBar().setDisplayHomeAsUpEnabled(true);
+		}
 	}
 
 	@Override
@@ -57,20 +62,6 @@ public class MainActivity extends Activity {
 	private void openSearch() {
 		// TODO Auto-generated method stub
 		
-	}
-
-	/** Called when the user clicks the Send button */
-	public void checkLogin(View view) {
-		Intent intent = new Intent(this, ProfileActivity.class);
-		EditText editText = (EditText) findViewById(R.id.edit_message);
-		String message = editText.getText().toString();
-		if(message.equals("test")){ //check login (username only) REFINE LATER 
-			startActivity(intent);
-		}else{
-			message = "Failed";
-			intent.putExtra(EXTRA_MESSAGE, message);
-			startActivity(intent);
-		}
 	}
 
 }
