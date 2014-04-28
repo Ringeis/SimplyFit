@@ -5,6 +5,8 @@ import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.CheckBox;
 import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
@@ -63,5 +65,22 @@ public class ProfileActivity extends Activity {
 		// TODO Auto-generated method stub
 		
 	}
-
+	
+	public void onCheckboxClicked(View view) {
+	    // Is the view now checked?
+	    boolean checked = ((CheckBox) view).isChecked();
+	    
+	    // Check which checkbox was clicked
+	    switch(view.getId()) {
+	        case R.id.checkbox_public:
+	            if (checked)
+	                
+	            break;
+	        case R.id.checkbox_private:
+	            if (checked)
+	                // Cheese me
+	            break;
+	        // TODO: Veggie sandwich
+	    }
+	}
 }

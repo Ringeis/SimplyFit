@@ -31,11 +31,16 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int action_search=0x7f090005;
-        public static final int action_settings=0x7f090004;
-        public static final int age=0x7f090003;
+        public static final int action_search=0x7f09000a;
+        public static final int action_settings=0x7f090009;
+        public static final int age_prompt=0x7f090005;
+        public static final int checkbox_private=0x7f090007;
+        public static final int checkbox_public=0x7f090008;
         public static final int edit_message=0x7f090001;
-        public static final int gender=0x7f090002;
+        public static final int first_prompt=0x7f090002;
+        public static final int gender=0x7f090006;
+        public static final int last_prompt=0x7f090003;
+        public static final int weight_prompt=0x7f090004;
         public static final int welcome=0x7f090000;
     }
     public static final class layout {
@@ -53,7 +58,7 @@ public final class R {
     public static final class string {
         public static final int action_search=0x7f050002;
         public static final int action_settings=0x7f050001;
-        public static final int age_prompt=0x7f05000a;
+        public static final int age=0x7f05000a;
         /**  General app 
          */
         public static final int app_name=0x7f050000;
@@ -64,14 +69,17 @@ public final class R {
         public static final int gender_prompt=0x7f050009;
         public static final int last_name=0x7f050008;
         public static final int password=0x7f050005;
-        public static final int title_activity_main=0x7f05000d;
-        public static final int title_activity_menu=0x7f05000c;
-        public static final int title_activity_profile=0x7f05000e;
+        public static final int private_check=0x7f05000d;
+        public static final int public_check=0x7f05000c;
+        public static final int title_activity_main=0x7f050010;
+        public static final int title_activity_menu=0x7f05000f;
+        public static final int title_activity_profile=0x7f050011;
         /**  page names 
          */
-        public static final int title_activity_results=0x7f05000b;
-        public static final int title_activity_workout=0x7f05000f;
+        public static final int title_activity_results=0x7f05000e;
+        public static final int title_activity_workout=0x7f050012;
         public static final int user_name=0x7f050004;
+        public static final int weight=0x7f05000b;
         /**  login 
          */
         public static final int welcome=0x7f050003;
