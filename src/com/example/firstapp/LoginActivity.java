@@ -1,47 +1,41 @@
 package com.example.firstapp;
 
-import android.os.Bundle;
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
+import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Build;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.TextView;
-import android.support.v4.app.NavUtils;
-import android.annotation.TargetApi;
-import android.content.Intent;
-import android.os.Build;
+import android.view.View;
+import android.widget.EditText;
 
-public class WorkoutActivity extends Activity {
 
+public class LoginActivity extends Activity {
+	public final static String EXTRA_MESSAGE = "com.example.firstapp.MESSAGE";
+	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_workout);
+		setContentView(R.layout.activity_login);
 		//ActionBar actionBar = getActionBar();
-		getActionBar().setDisplayHomeAsUpEnabled(true);
-	}
-
-	/**
-	 * Set up the {@link android.app.ActionBar}, if the API is available.
-	 */
-	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
-	private void setupActionBar() {
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-			getActionBar().setDisplayHomeAsUpEnabled(true);
-		}
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu items for use in the action bar
+	    // Inflate the menu items for use in the action bar
 	    MenuInflater inflater = getMenuInflater();
 	    inflater.inflate(R.menu.main_activity_actions, menu);
 	    return super.onCreateOptionsMenu(menu);
 	}
-
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle presses on the action bar items
+	    // Handle presses on the action bar items
 	    switch (item.getItemId()) {
 	        case R.id.action_search:
 	            openSearch();
@@ -53,7 +47,7 @@ public class WorkoutActivity extends Activity {
 	            return super.onOptionsItemSelected(item);
 	    }
 	}
-
+	
 	private void openSettings() {
 		// TODO Auto-generated method stub
 		
@@ -62,6 +56,20 @@ public class WorkoutActivity extends Activity {
 	private void openSearch() {
 		// TODO Auto-generated method stub
 		
+	}
+
+	/** Called when the user clicks the login button */
+	public void checkLogin(View view) {
+		Intent intent = new Intent(this, MenuActivity.class);
+		EditText editText = (EditText) findViewById(R.id.edit_message);
+		String message = editText.getText().toString();
+		if(message.equals("test")){ //check login (username only) REFINE LATER 
+			startActivity(intent);
+		}else{
+			message = "Failed";
+			intent.putExtra(EXTRA_MESSAGE, message);
+			startActivity(intent);
+		}
 	}
 
 }

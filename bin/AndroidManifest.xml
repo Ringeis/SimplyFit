@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         >
         <activity
-            android:name="com.example.firstapp.MainActivity"
+            android:name="com.example.firstapp.LoginActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,18 +24,37 @@
             </intent-filter>
         </activity>
         <activity
-        	android:theme="@android:style/Theme.Holo"
             android:name="com.example.firstapp.ProfileActivity"
             android:label="@string/title_activity_profile"
-            android:parentActivityName="com.example.firstapp.MainActivity" >
+            android:parentActivityName="com.example.firstapp.MenuActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.firstapp.MainActivity" />
+                android:value="com.example.firstapp.MenuActivity" />
         </activity>
         <activity
             android:name="com.example.firstapp.WorkoutActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_workout"
+            android:windowSoftInputMode="adjustPan" >
+            android:parentActivityName="com.example.firstapp.MenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.firstapp.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.example.firstapp.ResultsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_results"
+            android:windowSoftInputMode="adjustPan" >
+            android:parentActivityName="com.example.firstapp.MenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.firstapp.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.example.firstapp.MenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_menu"
             android:windowSoftInputMode="adjustPan" >
         </activity>
     </application>

@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+	<!-- General app -->
     <string name="app_name">AppName</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+
+	<!-- login -->
+    <string name="welcome">Welcome to SimplyFit</string>
     <string name="user_name">Username</string>
     <string name="password">Password</string>
     <string name="button_login">Login</string>
-    <string name="action_settings">Settings</string>
-    <string name="action_search">Search</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_profile">Profile</string>
-    <string name="title_activity_workout">Workout</string>
+    
+    <!-- profile edit -->
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
-    <string name="welcome">Welcome to SimplyFit</string>
     <string name="gender_prompt">Gender</string>
     <string name="age_prompt">Age</string>
     
+    <!-- page names -->
+    <string name="title_activity_results">Results</string>
+    <string name="title_activity_menu">Main Menu</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_workout">Workout</string>
+    
+    <!-- arrays -->
     <string-array name="gender_array">
         <item>Male</item>
         <item>Female</item>
