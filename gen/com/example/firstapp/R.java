@@ -31,24 +31,29 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int action_search=0x7f09000a;
-        public static final int action_settings=0x7f090009;
-        public static final int age_prompt=0x7f090005;
-        public static final int checkbox_private=0x7f090007;
-        public static final int checkbox_public=0x7f090008;
-        public static final int edit_message=0x7f090001;
-        public static final int first_prompt=0x7f090002;
-        public static final int gender=0x7f090006;
-        public static final int last_prompt=0x7f090003;
-        public static final int weight_prompt=0x7f090004;
-        public static final int welcome=0x7f090000;
+        public static final int action_search=0x7f09000e;
+        public static final int action_settings=0x7f09000d;
+        public static final int age_prompt=0x7f090009;
+        public static final int checkbox_private=0x7f09000b;
+        public static final int checkbox_public=0x7f09000c;
+        public static final int edit_message=0x7f090004;
+        public static final int first_prompt=0x7f090006;
+        public static final int gender=0x7f09000a;
+        public static final int last_prompt=0x7f090007;
+        public static final int loadimage=0x7f090000;
+        public static final int profile_photo=0x7f090005;
+        public static final int targetimage=0x7f090002;
+        public static final int targeturi=0x7f090001;
+        public static final int weight_prompt=0x7f090008;
+        public static final int welcome=0x7f090003;
     }
     public static final class layout {
-        public static final int activity_login=0x7f030000;
-        public static final int activity_menu=0x7f030001;
-        public static final int activity_profile=0x7f030002;
-        public static final int activity_results=0x7f030003;
-        public static final int activity_workout=0x7f030004;
+        public static final int activity_image_chooser=0x7f030000;
+        public static final int activity_login=0x7f030001;
+        public static final int activity_menu=0x7f030002;
+        public static final int activity_profile=0x7f030003;
+        public static final int activity_results=0x7f030004;
+        public static final int activity_workout=0x7f030005;
     }
     public static final class menu {
         public static final int display_message=0x7f080000;
@@ -70,14 +75,17 @@ public final class R {
         public static final int last_name=0x7f050008;
         public static final int password=0x7f050005;
         public static final int private_check=0x7f05000d;
+        public static final int profile_picture=0x7f05000e;
         public static final int public_check=0x7f05000c;
-        public static final int title_activity_main=0x7f050010;
-        public static final int title_activity_menu=0x7f05000f;
-        public static final int title_activity_profile=0x7f050011;
+        public static final int title_activity_image_chooser=0x7f05000f;
+        public static final int title_activity_main=0x7f050013;
+        public static final int title_activity_menu=0x7f050012;
+        public static final int title_activity_profile=0x7f050014;
+        public static final int title_activity_profile_photo=0x7f050010;
         /**  page names 
          */
-        public static final int title_activity_results=0x7f05000e;
-        public static final int title_activity_workout=0x7f050012;
+        public static final int title_activity_results=0x7f050011;
+        public static final int title_activity_workout=0x7f050015;
         public static final int user_name=0x7f050004;
         public static final int weight=0x7f05000b;
         /**  login 

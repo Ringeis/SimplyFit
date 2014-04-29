@@ -57,6 +57,10 @@
             android:label="@string/title_activity_menu"
             android:windowSoftInputMode="adjustPan" >
         </activity>
+         <activity
+            android:name="com.example.firstapp.ImageChooserActivity"
+            android:label="@string/title_activity_image_chooser" >
+        </activity>
     </application>
 
 </manifest>

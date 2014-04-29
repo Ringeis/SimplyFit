@@ -20,6 +20,9 @@
     <string name="weight">Weight</string>
     <string name="public_check">Public</string>
     <string name="private_check">Private</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="title_activity_image_chooser">ImageChooserActivity</string>
+    <string name="title_activity_profile_photo">ProfilePhotoActivity</string>
     
     <!-- page names -->
     <string name="title_activity_results">Results</string>

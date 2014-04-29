@@ -1,5 +1,9 @@
 package com.example.firstapp;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -7,11 +11,18 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
+import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.Matrix;
 import android.os.Build;
+import android.provider.MediaStore;
+import android.provider.MediaStore.Images.Media;
 
 public class ProfileActivity extends Activity {
 
@@ -82,5 +93,10 @@ public class ProfileActivity extends Activity {
 	            break;
 	        // TODO: Veggie sandwich
 	    }
+	}
+	
+	public void onPhotoClick(View view) {
+		Intent intent = new Intent(this, ImageChooserActivity.class);
+		startActivity(intent);
 	}
 }
